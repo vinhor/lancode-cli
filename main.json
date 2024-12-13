@@ -1,0 +1,15 @@
+{
+  "concepts": {
+    "js": ["constant", "variable", "function", "class", "type", "interface"],
+    "html": ["class", "id", "name"]
+  },
+  "js": {
+    "variable": "camelCase",
+    "function": "camelCase",
+    "constant": "UPPER_CASE",
+    "class": "PascalCase",
+    "type": "PascalCase",
+    "interface": "PascalCase"
+  },
+  "html": {}
+}
