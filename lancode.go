@@ -31,9 +31,12 @@ func main() {
 	}
 	var conceptIndex int
 	_, err := fmt.Scanln(&conceptIndex)
-	checkConceptIndex(len(data.Concepts[language]), err)
 	if conceptIndex == 0 {
 		os.Exit(0)
 	}
 	checkConceptIndex(len(data.Concepts[language]), err)
+	switch language {
+	case "js":
+		javaScriptConventions(data, conceptIndex)
+	}
 }

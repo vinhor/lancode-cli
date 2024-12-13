@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"os"
 	"slices"
 
@@ -10,7 +9,7 @@ import (
 
 func checkConceptIndex(maxNumber int, err error) {
 	if err != nil {
-		color.Red(fmt.Sprintf("Invalid concept index! Did you enter number between 0 and %v?", maxNumber))
+		color.Red("Invalid concept index! Did you enter number between 0 and %v?", maxNumber)
 		os.Exit(1)
 	}
 }

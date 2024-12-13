@@ -6,10 +6,10 @@ import (
 )
 
 type JSONData struct {
-	Concepts       map[string][]string          `json:"concepts"`
-	LanguagesNames [][]string                   `json:"languagesNames"`
-	Languages      []string                     `json:"languages"`
-	Conventions    map[string]map[string]string `json:"-"`
+	Concepts       map[string][]string `json:"concepts"`
+	LanguagesNames [][]string          `json:"languagesNames"`
+	Languages      []string            `json:"languages"`
+	JavaScript     map[string]string   `json:"js"`
 }
 
 func openJson() JSONData {
