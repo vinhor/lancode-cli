@@ -8,14 +8,14 @@ import (
 func main() {
 	data := openJson()
 
-	fmt.Println("Select language. h for help. 0 for abort")
+	fmt.Print("Select language. h for help. 0 for abort: ")
 	var language string
 	fmt.Scanln(&language)
 	if language == "h" {
 		for _, language := range data.LanguagesNames {
 			fmt.Printf("%s - %s\n", language[0], language[1])
 		}
-		fmt.Println("Select language.  0 for abort")
+		fmt.Print("Select language.  0 for abort: ")
 		fmt.Scanln(&language)
 		checkLanguage(data.Languages, language, false)
 	} else {
