@@ -61,5 +61,7 @@ func htmlConventions(json JSONData, conceptIndex int) {
 	case "name":
 		fmt.Printf("%s%s %s=%s%s\n", tag("<"), keyword("form"), attribute("name"), attributeValue("feedback-survey"), tag(">"))
 		fmt.Printf("%s%s%s\n", tag("</"), keyword("form"), tag(">"))
+	case "file":
+		fmt.Println("employee-list.html")
 	}
 }
