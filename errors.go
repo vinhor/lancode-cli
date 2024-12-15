@@ -7,8 +7,8 @@ import (
 	"github.com/fatih/color"
 )
 
-func checkConceptIndex(maxNumber int, err error, conceptIndex int) {
-	if err != nil || conceptIndex < 0 || conceptIndex > maxNumber {
+func checkConceptIndex(maxNumber int, conceptIndex int) {
+	if conceptIndex < 0 || conceptIndex > maxNumber {
 		color.Red("Invalid concept index! Did you enter number between 0 and %v?", maxNumber)
 		os.Exit(1)
 	}

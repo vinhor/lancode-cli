@@ -3,10 +3,10 @@
     "js": ["constant", "variable", "function", "class", "type", "interface"],
     "html": ["class", "id", "name"]
   },
-  "languagesNames": [
-    ["js", "JavaScript/TypeScript"],
-    ["html", "HTML"]
-  ],
+  "languagesNames": {
+    "js": ["js", "JavaScript/TypeScript"],
+    "html": ["html", "HTML"]
+  },
   "languages": ["js", "html"],
   "js": {
     "variable": "camelCase",
@@ -16,5 +16,9 @@
     "type": "PascalCase",
     "interface": "PascalCase"
   },
-  "html": {}
+  "html": {
+    "class": "kebab-case",
+    "id": "kebab-case",
+    "name": "kebab-case"
+  }
 }

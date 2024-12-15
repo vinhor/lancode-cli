@@ -7,9 +7,10 @@ import (
 
 type JSONData struct {
 	Concepts       map[string][]string `json:"concepts"`
-	LanguagesNames [][]string          `json:"languagesNames"`
+	LanguagesNames map[string][]string `json:"languagesNames"`
 	Languages      []string            `json:"languages"`
 	JavaScript     map[string]string   `json:"js"`
+	HTML           map[string]string   `json:"html"`
 }
 
 func openJson() JSONData {
